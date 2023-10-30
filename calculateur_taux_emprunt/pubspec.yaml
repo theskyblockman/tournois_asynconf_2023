@@ -1,0 +1,10 @@
+name: calculateur_taux_emprunt
+description: Un calculateur de taux d'emprunt créé pour l'Asynconf 2023
+version: 1.0.0
+
+environment:
+  sdk: ^3.1.5
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.21.0

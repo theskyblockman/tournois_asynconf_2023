@@ -1,0 +1,27 @@
+name: mon_taux_demprunt
+description: Calculez le taux d'emprunt de votre prochaine voiture avec cet outil! Créé pour l'Asynconf 2023
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+
+dependencies:
+  calculateur_taux_emprunt:
+    path: ../calculateur_taux_emprunt
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
