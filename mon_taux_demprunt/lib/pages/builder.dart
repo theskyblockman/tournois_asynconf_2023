@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
 class PageBuilder<T> extends StatelessWidget {
-  const PageBuilder({super.key, required this.title, required this.possibilities, required this.onChoiceMade, required this.nextPage});
+  const PageBuilder(
+      {super.key,
+      required this.title,
+      required this.possibilities,
+      required this.onChoiceMade,
+      required this.nextPage});
 
   final String title;
   final Map<String, T> possibilities;
@@ -30,18 +35,25 @@ class PageBuilder<T> extends StatelessWidget {
                           direction: Axis.vertical,
                           crossAxisAlignment: WrapCrossAlignment.center,
                           children: [
-                            for(final possibility in possibilities.keys)
+                            for (final possibility in possibilities.keys)
                               TextButton(
                                   onPressed: () {
                                     debugPrint('Pressed $possibility');
-                                    onChoiceMade(possibilities[possibility] as T);
+                                    onChoiceMade(
+                                        possibilities[possibility] as T);
                                     nextPage();
                                   },
                                   child: Text(possibility,
-                                      style: Theme.of(context).textTheme
-                                          .displaySmall?.copyWith(color: Theme.of(context)
-                                          .textButtonTheme.style?.textStyle?.resolve({})?.color))
-                              )]),
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .displaySmall
+                                          ?.copyWith(
+                                              color: Theme.of(context)
+                                                  .textButtonTheme
+                                                  .style
+                                                  ?.textStyle
+                                                  ?.resolve({})?.color)))
+                          ]),
                     ))
               ]),
         ),
