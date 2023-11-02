@@ -10,7 +10,6 @@ environment:
 dependencies:
   calculateur_taux_emprunt:
     path: ../calculateur_taux_emprunt
-  firebase_core: ^2.20.0
   flutter:
     sdk: flutter
   shared_preferences: ^2.2.2

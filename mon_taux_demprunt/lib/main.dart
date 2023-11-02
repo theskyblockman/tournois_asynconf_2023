@@ -8,16 +8,10 @@ import 'package:mon_taux_demprunt/converter.dart';
 import 'package:mon_taux_demprunt/pages/builder.dart';
 import 'package:mon_taux_demprunt/pages/result.dart';
 
-import 'package:firebase_core/firebase_core.dart';
 import 'package:mon_taux_demprunt/settings.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'firebase_options.dart';
 
 void main() async {
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-
   WidgetsFlutterBinding.ensureInitialized();
 
   late Map<String, dynamic> config;

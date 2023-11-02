@@ -3,10 +3,10 @@
     {
       "title": "Sélectionnez votre type de véhicule",
       "choices": {
-        "Citadine": 8,
-        "Cabriolet": 6,
-        "Berline": 6.5,
-        "SUV / 4x4": 4
+        "Citadine (800-1300kg)": 8,
+        "Cabriolet (1300-2000kg)": 6,
+        "Berline (1300-1800kg)": 6.5,
+        "SUV / 4x4 (1500-2500kg)": 4
       },
       "total_weight": 10
     },
